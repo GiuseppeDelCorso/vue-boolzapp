@@ -1,0 +1,209 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://unpkg.com/vue@3.3.8/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        
+        <div class="container">
+            <div class="row d-flex ">
+                <div class="col-4 bgcontacts">
+                    <div class="row d-flex align-items-center bgheadermain">
+                        <div class="col-2 ">
+                            <img class="imgSize my-2" src="avatar_io.jpg" alt="">
+                        </div>
+                        <div class="col-2 d-flex">
+                            <p>Sofia</p>
+                        </div>
+                        <div class="col-1 col-2 d-flex">
+                            <i class="fa-solid fa-message"></i>
+                        </div>
+                        <div class="col-1 d-flex">
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+                        <div class="col-1 d-flex">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center bgceleste">
+                        <div class="col-2">
+                            <i class="fa-solid fa-bell-slash fs-1 text pt-3 mb-3"></i>
+                        </div>
+                        <div class="col-10 mb-2">
+                            <p class="my-0 mt-3">Ricevi Notifiche di nuovi messago</p>
+                            <a  href="google.com">Attiva Notifiche desktop</a>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center bgcontacts">
+                        <div class="col-12 d-flex">
+                            <div class="input-group mt-2">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" class="form-control" placeholder="Cerca o Inizia una nuova Chat" aria-label="Username" aria-describedby="basic-addon1">
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row bgcontacts">
+                        <div class="col-12 mt-3">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img class="imgSize" src="avatar_1.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <div>Michele</div>
+                                    <div class="fs-7">Ultimo messagio inviato</div>
+                                </div>
+                                <div class="col-1">
+                                    <p class="fs-7 ">12:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bgcontacts">
+                        <div class="col-12 mt-3">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img class="imgSize" src="avatar_1.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <div>Michele</div>
+                                    <div class="fs-7">Ultimo messagio inviato</div>
+                                </div>
+                                <div class="col-1">
+                                    <p class="fs-7">12:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bgcontacts">
+                        <div class="col-12 mt-3">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img class="imgSize" src="avatar_1.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <div>Michele</div>
+                                    <div class="fs-7">Ultimo messagio inviato</div>
+                                </div>
+                                <div class="col-1">
+                                    <p class="fs-7">12:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bgcontacts">
+                        <div class="col-12 mt-3">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img class="imgSize" src="avatar_1.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <div>Michele</div>
+                                    <div class="fs-7">Ultimo messagio inviato</div>
+                                </div>
+                                <div class="col-1">
+                                    <p class="fs-7">12:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bgcontacts">
+                        <div class="col-12 mt-3">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img class="imgSize" src="avatar_1.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <div>Michele</div>
+                                    <div class="fs-7">Ultimo messagio inviato</div>
+                                </div>
+                                <div class="col-1">
+                                    <p class="fs-7">12:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bgcontacts">
+                        <div class="col-12 mt-3">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img class="imgSize" src="avatar_1.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <div>Michele</div>
+                                    <div class="fs-7">Ultimo messagio inviato</div>
+                                </div>
+                                <div class="col-1">
+                                    <p class="fs-7">12:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bgcontacts">
+                        <div class="col-12 mt-3">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img class="imgSize" src="avatar_1.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <div>Michele</div>
+                                    <div class="fs-7">Ultimo messagio inviato</div>
+                                </div>
+                                <div class="col-1">
+                                    <p class="fs-7">12:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 d-flex flex-column bgsearchbar">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-1">
+                            <img class="imgSize my-2" src="avatar_io.jpg" alt="">
+                        </div>
+                        <div class="col-6">
+                            <div>Michele</div>
+                            <div class="fs-7">Ultimo Accesso 12:00</div>
+                        </div>
+                        <div class="col-1 col-2 d-flex">
+                            <i class="fa-solid fa-message"></i>
+                        </div>
+                        <div class="col-1 d-flex">
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+                        <div class="col-1 d-flex">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="row bg-main altezza">
+                        <div class="col-12">
+                            <p>Hai portato il cane</p>
+                        </div>
+                    </div>
+                    <div class="row bgsearchbar">
+                        <div class="col-1 my-2 text-center">
+                            <i class="fa-regular fa-face-smile fs-4"></i>
+                        </div>
+                        <div class="col-10 my-2 ">
+                            <input class="lunghezza-Input" type="text" placeholder="Scrivi un messagio">
+                        </div>
+                        <div class="col-1 my-2">
+                            <i class="fa-solid fa-microphone fs-4"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

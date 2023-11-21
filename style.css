@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+}
+.bgceleste{
+    background-color: lightskyblue
+}
+.bgsearchbar{
+    background-color: #f3eeea;
+}
+.bgheadermain{
+   background-color: #eaeaea;
+}
+.bgcontacts{
+    background-color: #ffffff;
+}
+.imgSize{
+    width: 45px;
+    height: 45px;
+    border-radius: 22px;
+}
+.fs-7{
+    font-size: 10px;
+}
+.bg-main{
+background-image: url(mine.jpg);
+}
+.altezza{
+    height: 550px;
+}
+.lunghezza-Input{
+    width: 700px;
+}
