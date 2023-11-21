@@ -86,10 +86,10 @@
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
-                    <div class="row bg-main altezza d-flex flex-column">
-                        <div class="col-12 d-flex">
+                    <div v-for="messagi in contacts"class="row bg-main altezza d-flex flex-column">
+                        <div class="col-12 d-flex bgcontacts ">
                             <div class="styleSendMsg">
-                                <p class="ms-2">Ricordati di stendere i panni</p>
+                                <p class="ms-2">{{ messagi.messages[0].message}}</p>
                                 <p class="fs-7">12:00</p>
                             </div>
                         </div>
