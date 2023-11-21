@@ -51,116 +51,21 @@
                     </div>
                     <div class="row bgcontacts">
                         <div class="col-12 mt-3">
-                            <div class="row">
-                                <div class="col-2">
-                                    <img class="imgSize" src="avatar_1.jpg" alt="">
+                            <div v-for="elemento in contacts" class="row">
+                                <div class="col-2 my-1">
+                                    <img class="imgSize" v-bind:src="elemento.avatar" alt="">
                                 </div>
-                                <div class="col-9">
-                                    <div>Michele</div>
+                                <div class="col-9 my-2">
+                                    <div>{{ elemento.name }}</div>
                                     <div class="fs-7">Ultimo messagio inviato</div>
                                 </div>
-                                <div class="col-1">
+                                <div class="col-1 my-2">
                                     <p class="fs-7 ">12:00</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row bgcontacts">
-                        <div class="col-12 mt-3">
-                            <div class="row">
-                                <div class="col-2">
-                                    <img class="imgSize" src="avatar_1.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <div>Michele</div>
-                                    <div class="fs-7">Ultimo messagio inviato</div>
-                                </div>
-                                <div class="col-1">
-                                    <p class="fs-7">12:00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row bgcontacts">
-                        <div class="col-12 mt-3">
-                            <div class="row">
-                                <div class="col-2">
-                                    <img class="imgSize" src="avatar_1.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <div>Michele</div>
-                                    <div class="fs-7">Ultimo messagio inviato</div>
-                                </div>
-                                <div class="col-1">
-                                    <p class="fs-7">12:00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row bgcontacts">
-                        <div class="col-12 mt-3">
-                            <div class="row">
-                                <div class="col-2">
-                                    <img class="imgSize" src="avatar_1.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <div>Michele</div>
-                                    <div class="fs-7">Ultimo messagio inviato</div>
-                                </div>
-                                <div class="col-1">
-                                    <p class="fs-7">12:00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row bgcontacts">
-                        <div class="col-12 mt-3">
-                            <div class="row">
-                                <div class="col-2">
-                                    <img class="imgSize" src="avatar_1.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <div>Michele</div>
-                                    <div class="fs-7">Ultimo messagio inviato</div>
-                                </div>
-                                <div class="col-1">
-                                    <p class="fs-7">12:00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row bgcontacts">
-                        <div class="col-12 mt-3">
-                            <div class="row">
-                                <div class="col-2">
-                                    <img class="imgSize" src="avatar_1.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <div>Michele</div>
-                                    <div class="fs-7">Ultimo messagio inviato</div>
-                                </div>
-                                <div class="col-1">
-                                    <p class="fs-7">12:00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row bgcontacts">
-                        <div class="col-12 mt-3">
-                            <div class="row">
-                                <div class="col-2">
-                                    <img class="imgSize" src="avatar_1.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <div>Michele</div>
-                                    <div class="fs-7">Ultimo messagio inviato</div>
-                                </div>
-                                <div class="col-1">
-                                    <p class="fs-7">12:00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="col-8 d-flex flex-column bgsearchbar">
                     <div class="row d-flex align-items-center">
@@ -181,10 +86,27 @@
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
-                    <div class="row bg-main altezza">
-                        <div class="col-12">
-                            <p>Hai portato il cane</p>
+                    <div class="row bg-main altezza d-flex flex-column">
+                        <div class="col-12 d-flex">
+                            <div class="styleSendMsg">
+                                <p class="ms-2">Ricordati di stendere i panni</p>
+                                <p class="fs-7">12:00</p>
+                            </div>
                         </div>
+                        <div class="col-12 d-flex">
+                            <div class="styleSendMsg">
+                                <p class="ms-2">Hai portato il cane</p>
+                                <p class="fs-7">12:00</p>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex align-items-center">
+                            <div class="styleSendMsg ">
+                                <p class="ms-2">Tutto Fatto</p>
+                                <p class="fs-7">12:00</p>
+                            </div>
+                        </div>
+                            
+                            
                     </div>
                     <div class="row bgsearchbar">
                         <div class="col-1 my-2 text-center">
