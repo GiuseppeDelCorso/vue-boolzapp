@@ -86,22 +86,22 @@
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
-                    <div v-for="messagi in contacts"class="row bg-main altezza d-flex flex-column">
-                        <div class="col-12 d-flex bgcontacts ">
+                    <div v-for="messagi in contacts" class="row bg-main altezza d-flex flex-column">
+                        <div class="col-12 d-flex bgcontacts justify-content-end">
                             <div class="styleSendMsg">
                                 <p class="ms-2">{{ messagi.messages[0].message}}</p>
                                 <p class="fs-7">12:00</p>
                             </div>
                         </div>
-                        <div class="col-12 d-flex">
+                        <div class="col-12 d-flex justify-content-end">
                             <div class="styleSendMsg">
-                                <p class="ms-2">Hai portato il cane</p>
+                                <p class="ms-2">{{ messagi.messages[1].message}}</p>
                                 <p class="fs-7">12:00</p>
                             </div>
                         </div>
-                        <div class="col-12 d-flex align-items-center">
+                        <div class="col-12 d-flex justify-content-start">
                             <div class="styleSendMsg ">
-                                <p class="ms-2">Tutto Fatto</p>
+                                <p class="ms-2">{{ messagi.messages[1].message}}</p>
                                 <p class="fs-7">12:00</p>
                             </div>
                         </div>
