@@ -88,9 +88,9 @@
                     </div>
                     <div class="row bg-main altezza d-flex flex-column">
                         <div v-for="messaggio in contacts[index].messages" class="col-12 d-flex justify-content-end my-2">
-                            <div class="styleSendMsg ">
-                                <p class="ms-2 fs-8">{{ messaggio.message }}</p>
-                                <p class="fs-7">{{ messaggio.date }}</p>
+                            <div class="d-flex align-items-end">
+                                <p class="pb-3 ps-2 fs-8 styleSendMsg ">{{ messaggio.message }}</p>
+                                <p class="fs-7 dataStyling">{{ messaggio.date }}</p>       
                             </div>
                         </div>      
                     </div>
