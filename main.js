@@ -3,7 +3,10 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
+            index: 0,
+            nuovoMessaggio: "",
             contacts: [
+
                 {
                     name: 'Michele',
                     avatar: 'avatar_1.jpg',
@@ -170,9 +173,40 @@ createApp({
         }
     },
     
-    
+    methods:{
+        selectContact(i){
+
+            console.log(i)
+            this.contacts[i].messages.forEach(messaggio => {
+                
+                console.log(messaggio.message)
+                this.index == this.messaggio
+            });
+            
+
+        },
+        add(){
+            
+            let contenutoNuovoMessaggio = {
+
+                message: this.nuovoMessaggio,
+                date: this.contacts[this.index].date
+
+            }
+            this.contacts[this.index].messages.push(contenutoNuovoMessaggio)
+
+
+        }
+
+
+    },
     mounted() {
-        
+
+        //stampare utti i  messaggi di samuele prima tutto l'array di 
+       // message
+         //e con il ciclo ogni singolo messaggi in console//
+
+        console.log(this.contacts[0].messages)
     },
     
     

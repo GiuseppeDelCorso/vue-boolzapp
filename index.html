@@ -51,7 +51,7 @@
                     </div>
                     <div class="row bgcontacts">
                         <div class="col-12 mt-3">
-                            <div v-for="elemento in contacts" class="row">
+                            <div  @click="selectContact(i)" v-for="(elemento,i) in contacts" class="row">
                                 <div class="col-2 my-1">
                                     <img class="imgSize" v-bind:src="elemento.avatar" alt="">
                                 </div>
@@ -67,7 +67,7 @@
                     </div>
                     
                 </div>
-                <div class="col-8 d-flex flex-column bgsearchbar">
+                <div class="col-8 d-flex flex-column bgsearchbar ">
                     <div class="row d-flex align-items-center">
                         <div class="col-1">
                             <img class="imgSize my-2" src="avatar_io.jpg" alt="">
@@ -86,34 +86,23 @@
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
-                    <div v-for="messagi in contacts" class="row bg-main altezza d-flex flex-column">
-                        <div class="col-12 d-flex bgcontacts justify-content-end">
-                            <div class="styleSendMsg">
-                                <p class="ms-2 fs-8">{{ messagi.messages[0].message}}</p>
-                                <p class="fs-7">{{ messagi.messages[0].date}}</p>
-                            </div>
-                        </div>
-                        <div class="col-12 d-flex justify-content-end">
-                            <div class="styleSendMsg">
-                                <p class="ms-2 fs-8">{{ messagi.messages[1].message}}</p>
-                                <p class="fs-7">{{ messagi.messages[1].date}}</p>
-                            </div>
-                        </div>
-                        <div class="col-12 d-flex justify-content-start">
+                    <div class="row bg-main altezza d-flex flex-column">
+                        <div v-for="messaggio in contacts[index].messages" class="col-12 d-flex justify-content-end my-2">
                             <div class="styleSendMsg ">
-                                <p class="ms-2 fs-8">{{ messagi.messages[1].message}}</p>
-                                <p class="fs-7">{{ messagi.messages[1].date}}</p>
+                                <p class="ms-2 fs-8">{{ messaggio.message }}</p>
+                                <p class="fs-7">{{ messaggio.date }}</p>
                             </div>
-                        </div>
-                            
-                            
+                        </div>      
                     </div>
                     <div class="row bgsearchbar">
                         <div class="col-1 my-2 text-center">
                             <i class="fa-regular fa-face-smile fs-4"></i>
                         </div>
-                        <div class="col-10 my-2 ">
-                            <input class="lunghezza-Input" type="text" placeholder="Scrivi un messagio">
+                        <div class="col-9 my-2 ">
+                            <input class="lunghezza-Input"  v-model="nuovoMessaggio" type="text" placeholder="Scrivi un messagio">
+                        </div>
+                        <div class="col-1 my-2">
+                            <i @click="add" class="fa-solid fa-paper-plane fs-5 pt-1"></i>
                         </div>
                         <div class="col-1 my-2">
                             <i class="fa-solid fa-microphone fs-4"></i>
