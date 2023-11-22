@@ -203,7 +203,7 @@ createApp({
 
                     message: "No",
                     date : "12:30:44",
-                    status : "recevied" 
+                    status : "received",
                 }
                 this.contacts[this.index].messages.push(selfMessage)
               }, 2000);

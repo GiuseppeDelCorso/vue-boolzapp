@@ -38,7 +38,7 @@ background-image: url(mine.jpg);
 
 .dataStyling{
 
-    position: relative;
+    
     bottom: 2px;
     margin-right: 10px;
     right: 42px;
@@ -52,26 +52,25 @@ background-image: url(mine.jpg);
 
 
 .received{
-    display: flex;
-    justify-content: start;
     background-color: #ffffff;
     border-radius: 6px;
-    width: 230px;
+    width: 280px;
     height: 50px;
     padding-left: 5px;
-    padding-top: 10px;
+    padding-top: 28px;
     display: flex;
     align-items: center;
+   justify-content: space-between;
 }
 .sent{
-    display: flex;
-    justify-content: end;
     background-color: #d4f8ba;
     border-radius: 6px;
-    width: 230px;
+    width: 280px;
     height: 50px;
     padding-left: 5px;
-    padding-top: 10px;
+    padding-top: 28px;
     display: flex;
     align-items: center;
+    margin-left: 550px;
+    justify-content: space-between;
 }

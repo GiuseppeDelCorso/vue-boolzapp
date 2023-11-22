@@ -86,10 +86,10 @@
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
-                    <div class="row bg-main altezza d-flex flex-column">
-                        <div v-for="messaggio in contacts[index].messages"  class="col-12  my-2">
-                            <div :class="messaggio.status" >
-                                <p  class="pb-3 ps-2 fs-8 ">{{ messaggio.message }}</p>
+                    <div class="row bg-main altezza d-flex flex-column ">
+                        <div v-for="messaggio in contacts[index].messages"  class="col-12 d-flex my-2">
+                            <div :class="messaggio.status">
+                                <p   class="pb-3 ps-2 fs-8 ">{{ messaggio.message }}</p>
                                 <p class="fs-7 dataStyling">{{ messaggio.date }}</p>       
                             </div>
                         </div>      
