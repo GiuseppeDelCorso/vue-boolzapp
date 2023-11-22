@@ -192,10 +192,19 @@ createApp({
             let contenutoNuovoMessaggio = {
 
                 message: this.nuovoMessaggio,
-                date : this.messages[this.date]
+                date : "12:30:22"
             }
+
             this.contacts[this.index].messages.push(contenutoNuovoMessaggio)
             
+            setTimeout(() => {
+                let selfMessage = {
+
+                    message: "Ok",
+                    date : "12:30:44"
+                }
+                this.contacts[this.index].messages.push(selfMessage)
+              }, 2000);
             
         }
         

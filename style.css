@@ -67,3 +67,13 @@ background-image: url(mine.jpg);
 .positionrelative{
     position: relative;
 }
+
+
+.classRecived{
+    display: flex;
+    justify-content: start;
+}
+.classSend{
+    display: flex;
+    justify-content: end;
+}
