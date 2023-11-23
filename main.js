@@ -9,7 +9,7 @@ createApp({
             contacts: [
 
                 {
-                    name: 'Michele',
+                    name: 'michele',
                     avatar: 'avatar_1.jpg',
                     visible: true,
                     messages: [
@@ -31,7 +31,7 @@ createApp({
                     ],
                 },
                 {
-                    name: 'Fabio',
+                    name: 'fabio',
                     avatar: 'avatar_2.jpg',
                     visible: true,
                     messages: [
@@ -53,7 +53,7 @@ createApp({
                     ],
                 },
                 {
-                    name: 'Samuele',
+                    name: 'samuele',
                     avatar: 'avatar_3.jpg',
                     visible: true,
                     messages: [
@@ -75,7 +75,7 @@ createApp({
                     ],
                 },
                 {
-                    name: 'Alessandro B.',
+                    name: 'alessandro B.',
                     avatar: 'avatar_4.jpg',
                     visible: true,
                     messages: [
@@ -92,7 +92,7 @@ createApp({
                     ],
                 },
                 {
-                    name: 'Alessandro L.',
+                    name: 'alessandro L.',
                     avatar: 'avatar_5.jpg',
                     visible: true,
                     messages: [
@@ -109,7 +109,7 @@ createApp({
                     ],
                 },
                 {
-                    name: 'Claudia',
+                    name: 'claudia',
                     avatar: 'avatar_6.jpg',
                     visible: true,
                     messages: [
@@ -131,7 +131,7 @@ createApp({
                     ],
                 },
                 {
-                    name: 'Federico',
+                    name: 'federico',
                     avatar: 'avatar_7.jpg',
                     visible: true,
                     messages: [
@@ -148,7 +148,7 @@ createApp({
                     ],
                 },
                 {
-                    name: 'Davide',
+                    name: 'davide',
                     avatar: 'avatar_8.jpg',
                     visible: true,
                     messages: [
@@ -213,17 +213,22 @@ createApp({
         findContact(){
 
 
-            this.contacts.forEach(name => {
+            this.contacts.forEach(contact => {
 
-                if(this.index.name == this.findProfile){
-                    neme.visible = true
+                console.log(contact.name)
+                
+
+                if (contact.name.includes(this.findProfile)){
+                    contact.visible = true
+                    
                 }
                 else{
-                    name.visible = false
+                    contact.visible = false
+                    
                 }
             
                 
-                
+            
             });
             console.log(this.findProfile)
 
