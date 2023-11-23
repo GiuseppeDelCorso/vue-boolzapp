@@ -216,7 +216,7 @@ createApp({
             this.contacts.forEach(name => {
 
                 if(this.index.name == this.findProfile){
-                    name.visible = true
+                    neme.visible = true
                 }
                 else{
                     name.visible = false
