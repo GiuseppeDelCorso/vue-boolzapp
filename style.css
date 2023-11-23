@@ -15,6 +15,9 @@
 .bgcontacts{
     background-color: #ffffff;
 }
+.fontAwesomeColor{
+    color: #b0b1b1;
+}
 .imgSize{
     width: 45px;
     height: 45px;
@@ -49,6 +52,7 @@ background-image: url(mine.jpg);
 .positionrelative{
     position: relative;
 }
+
 
 
 .received{

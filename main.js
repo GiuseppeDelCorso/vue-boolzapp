@@ -5,6 +5,7 @@ createApp({
         return {
             index: 0,
             nuovoMessaggio: "",
+            findProfile: "",
             contacts: [
 
                 {
@@ -193,7 +194,7 @@ createApp({
 
                 message: this.nuovoMessaggio,
                 date : "12:30:22",
-                status : "sent" 
+                status : "sent"
             }
 
             this.contacts[this.index].messages.push(contenutoNuovoMessaggio)
@@ -201,13 +202,34 @@ createApp({
             setTimeout(() => {
                 let selfMessage = {
 
-                    message: "No",
+                    message: "okkey",
                     date : "12:30:44",
                     status : "received",
                 }
                 this.contacts[this.index].messages.push(selfMessage)
               }, 2000);
             
+        },
+        findContact(){
+
+
+            this.contacts.forEach(name => {
+
+                if(this.index.name == this.findProfile){
+                    name.visible = true
+                }
+                else{
+                    name.visible = false
+                }
+            
+                
+                
+            });
+            console.log(this.findProfile)
+
+            
+
+
         }
         
         
@@ -215,9 +237,7 @@ createApp({
     mounted() {
         
         
-        //stampare utti i  messaggi di samuele prima tutto l'array di 
-       // message
-         //e con il ciclo ogni singolo messaggi in console//
+        
 
         
     },

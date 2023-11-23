@@ -22,19 +22,15 @@
                         <div class="col-2 d-flex">
                             <p>Sofia</p>
                         </div>
-                        <div class="col-1 col-2 d-flex">
-                            <i class="fa-solid fa-message"></i>
-                        </div>
-                        <div class="col-1 d-flex">
-                            <i class="fa-solid fa-bell"></i>
-                        </div>
-                        <div class="col-1 d-flex">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <div class="col-8 d-flex justify-content-end">
+                            <i class="fa-solid fa-message mx-2 fontAwesomeColor "></i>
+                            <i class="fa-solid fa-ellipsis-vertical mx-2 fontAwesomeColor "></i>
+                            <i class="fa-solid fa-bell mx-2 fontAwesomeColor "></i>
                         </div>
                     </div>
                     <div class="row d-flex align-items-center bgceleste">
                         <div class="col-2">
-                            <i class="fa-solid fa-bell-slash fs-1 text pt-3 mb-3"></i>
+                            <i class="fa-solid fa-bell-slash fs-1 text pt-3 mb-3 text-white "></i>
                         </div>
                         <div class="col-10 mb-2">
                             <p class="my-0 mt-3">Ricevi Notifiche di nuovi messago</p>
@@ -45,22 +41,22 @@
                         <div class="col-12 d-flex">
                             <div class="input-group mt-2">
                                 <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-                                <input type="text" class="form-control" placeholder="Cerca o Inizia una nuova Chat" aria-label="Username" aria-describedby="basic-addon1">
+                                <input v-model="findProfile" @keyup="findContact" type="text" class="form-control" placeholder="Cerca o Inizia una nuova Chat" aria-label="Username" aria-describedby="basic-addon1">
                               </div>
                         </div>
                     </div>
                     <div class="row bgcontacts">
                         <div class="col-12 mt-3">
-                            <div  @click="selectContact(i)" v-for="(elemento,i) in contacts" class="row">
+                            <div  @click="selectContact(i)" v-show="elemento.visible" v-for="(elemento,i) in contacts" class="row">
                                 <div class="col-2 my-1">
                                     <img class="imgSize" v-bind:src="elemento.avatar" alt="">
                                 </div>
-                                <div class="col-9 my-2">
+                                <div class="col-8 my-2">
                                     <div>{{ elemento.name }}</div>
                                     <div class="fs-7">Ultimo messagio inviato</div>
                                 </div>
-                                <div class="col-1 my-2">
-                                    <p class="fs-7 ">12:00</p>
+                                <div class="col-1 d-flex align-items-end ">
+                                    <p class="fs-7 mb-1 ">12:00</p>
                                 </div>
                             </div>
                         </div>
@@ -68,31 +64,28 @@
                     
                 </div>
                 <div class="col-8 d-flex flex-column bgsearchbar ">
-                    <div class="row d-flex align-items-center">
+                    <div  class="row d-flex align-items-center">
                         <div class="col-1">
                             <img class="imgSize my-2" src="avatar_io.jpg" alt="">
                         </div>
                         <div class="col-6">
-                            <div>Michele</div>
+                            <div>michele</div>
                             <div class="fs-7">Ultimo Accesso 12:00</div>
                         </div>
-                        <div class="col-1 col-2 d-flex">
-                            <i class="fa-solid fa-message"></i>
+                        <div class="col-5 col-2 d-flex justify-content-end ">
+                            <i class="fa-solid fa-magnifying-glass mx-2 fontAwesomeColor fontAwesomeColor"></i>
+                            <i class="fa-solid fa-paperclip mx-2 fontAwesomeColor fontAwesomeColor"></i>
+                            <i class="fa-solid fa-ellipsis-vertical mx-2 fontAwesomeColor fontAwesomeColor"></i>
                         </div>
-                        <div class="col-1 d-flex">
-                            <i class="fa-solid fa-bell"></i>
-                        </div>
-                        <div class="col-1 d-flex">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
+                       
                     </div>
-                    <div class="row bg-main altezza d-flex flex-column ">
+                    <div class="row bg-main altezza d-flex flex-column">
                         <div v-for="messaggio in contacts[index].messages"  class="col-12 d-flex my-2">
                             <div :class="messaggio.status">
                                 <p   class="pb-3 ps-2 fs-8 ">{{ messaggio.message }}</p>
                                 <p class="fs-7 dataStyling">{{ messaggio.date }}</p>       
                             </div>
-                        </div>      
+                        </div>
                     </div>
                     <div class="row bgsearchbar">
                         <div class="col-1 my-2 text-center">
